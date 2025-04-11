@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Pokémon Manager</h1>
+
+        <!-- Form -->
+        <form id="pokemonForm">
+            <input type="hidden" id="pokemonId">
+            <div class="mb-3">
+                <label for="pokemonName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="pokemonName" required>
+            </div>
+            <div class="mb-3">
+                <label for="pokemonType" class="form-label">Type</label>
+                <input type="text" class="form-control" id="pokemonType" required>
+            </div>
+            <div class="mb-3">
+                <label for="pokemonLevel" class="form-label">Level</label>
+                <input type="number" class="form-control" id="pokemonLevel" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
+        <!-- Pokémon List -->
+        <h2 class="mt-5">Pokémon List</h2>
+        <ul id="pokemonList" class="list-group"></ul>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
